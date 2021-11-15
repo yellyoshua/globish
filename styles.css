@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  user-select: none;
+  min-height: 100vh;
+  background-color: #111827;
+}
+
+#copyrights {
+  font-family: "Shippori Antique B1", sans-serif;
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+.no-root {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.globish-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  font-family: "Shippori Antique B1", sans-serif;
+}
+
+.globish-words {
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 10px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.globish-word {
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: "Shippori Antique B1", sans-serif;
+  padding: 10px;
+  background: #34415c;
+  color: white;
+}
+
+.globish-word:hover {
+  background: #3b5895;
+}
+
+.globish-word:active {
+  background: #34415c;
+}
+
+@media (max-width: 900px) {
+  .globish-words {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .globish-word {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .globish-words {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 400px) {
+  .globish-words {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
