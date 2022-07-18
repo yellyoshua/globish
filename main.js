@@ -2,7 +2,7 @@
 
 /** @type {() => Promise<string[]>} */
 const fetchGlobishWords = async () => {
-  const response = await fetch("/api/1500-english-globish-words.json", {
+  const response = await fetch("https://api.yoshualopez.com/globish", {
     method: "GET",
   });
   return response.json();
